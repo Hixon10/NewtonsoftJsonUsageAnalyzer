@@ -37,6 +37,13 @@ In a nutshell, you have 3 ways, how to use it:
 
 ![Example of NS0001](docs/images/NS0001.png)
 
+```
+$ dotnet build
+1>Examples.cs(4,1): Error NS0001 : Detected Newtonsoft usage: 'Newtonsoft.Json'
+1>------- Finished building project: NewtonsoftJsonUsageAnalyzer.Sample. Succeeded: False. Errors: 1. Warnings: 0
+Build completed in 00:00:01.838
+```
+
 ## Credits
 1. [https://github.com/jonathanpeppers/memory-analyzers](https://github.com/jonathanpeppers/memory-analyzers) - example, how to build Roslyn analyzers.
 2. [JetBrains Rider](https://www.jetbrains.com/rider/) - really awesome predifined template for Roslyn analyzers, including samples and tests.
