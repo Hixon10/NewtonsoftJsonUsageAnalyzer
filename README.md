@@ -33,6 +33,10 @@ In a nutshell, you have 3 ways, how to use it:
 ```
 3. You can use a nuget package with this analyzer (TODO: upload to nuget)
 
+## Example of NS0001 
+
+![Example of NS0001](docs/images/NS0001.png)
+
 ## Credits
 1. [https://github.com/jonathanpeppers/memory-analyzers](https://github.com/jonathanpeppers/memory-analyzers) - example, how to build Roslyn analyzers.
 2. [JetBrains Rider](https://www.jetbrains.com/rider/) - really awesome predifined template for Roslyn analyzers, including samples and tests.
