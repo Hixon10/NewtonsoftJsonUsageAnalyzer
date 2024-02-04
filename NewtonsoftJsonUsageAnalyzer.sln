@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NewtonsoftJsonUsageAnalyzer", "NewtonsoftJsonUsageAnalyzer\NewtonsoftJsonUsageAnalyzer\NewtonsoftJsonUsageAnalyzer.csproj", "{63C78F4E-6E76-46E2-8B80-143E5F8B2E7F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NewtonsoftJsonUsageAnalyzer.Sample", "NewtonsoftJsonUsageAnalyzer\NewtonsoftJsonUsageAnalyzer.Sample\NewtonsoftJsonUsageAnalyzer.Sample.csproj", "{BF5F3E36-A063-40ED-A3C7-91680168214E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NewtonsoftJsonUsageAnalyzer.Tests", "NewtonsoftJsonUsageAnalyzer\NewtonsoftJsonUsageAnalyzer.Tests\NewtonsoftJsonUsageAnalyzer.Tests.csproj", "{E20EF578-BFA0-4DD8-895A-07927A684A66}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{63C78F4E-6E76-46E2-8B80-143E5F8B2E7F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{63C78F4E-6E76-46E2-8B80-143E5F8B2E7F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{63C78F4E-6E76-46E2-8B80-143E5F8B2E7F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{63C78F4E-6E76-46E2-8B80-143E5F8B2E7F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BF5F3E36-A063-40ED-A3C7-91680168214E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BF5F3E36-A063-40ED-A3C7-91680168214E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BF5F3E36-A063-40ED-A3C7-91680168214E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BF5F3E36-A063-40ED-A3C7-91680168214E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E20EF578-BFA0-4DD8-895A-07927A684A66}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E20EF578-BFA0-4DD8-895A-07927A684A66}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E20EF578-BFA0-4DD8-895A-07927A684A66}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E20EF578-BFA0-4DD8-895A-07927A684A66}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
