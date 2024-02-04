@@ -6,9 +6,9 @@ A roslyn analyzer, which allows to detect and fail builds, which use `Newtonsoft
 
 ## Motivation
 
-`Newtonsoft.Json` is a great library, and there is no any problems to use it. 
-However, in some cases, people might to decide to use [System.Text.Json](https://learn.microsoft.com/en-us/dotnet/api/system.text.json?view=net-8.0) instead of.
-In these cases, it is needed to have some way to detect usage of `Newtonsoft.Json` and prevent it, during migration.
+`Newtonsoft.Json` is a great library, and there are no problems with using it.
+However, in some cases, people might decide to use [System.Text.Json](https://learn.microsoft.com/en-us/dotnet/api/system.text.json?view=net-8.0) instead.
+In these cases, it is necessary to have a way to detect the usage of `Newtonsoft.Json` and prevent it during migration.
 
 ## How to use
 
