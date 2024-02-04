@@ -1,5 +1,7 @@
 # Newtonsoft.Json Usage Analyzer
 
+[![NuGet](https://buildstats.info/nuget/NewtonsoftJsonUsageAnalyzer?includePreReleases=true)](https://www.nuget.org/packages/NewtonsoftJsonUsageAnalyzer/)
+
 A roslyn analyzer, which allows to detect and fail builds, which use `Newtonsoft.Json` library.
 
 ## Motivation
@@ -12,14 +14,18 @@ In these cases, it is needed to have some way to detect usage of `Newtonsoft.Jso
 
 In a nutshell, you have 3 ways, how to use it:
 
-1. You can attach this analyzer per specific project(s) (e.g., [NewtonsoftJsonUsageAnalyzer.Sample.csproj](https://github.com/Hixon10/NewtonsoftJsonUsageAnalyzer/blob/main/NewtonsoftJsonUsageAnalyzer/NewtonsoftJsonUsageAnalyzer.Sample/NewtonsoftJsonUsageAnalyzer.Sample.csproj)):
+1. You can use a nuget package with this analyzer:
+```
+dotnet add package NewtonsoftJsonUsageAnalyzer --version 0.2.0
+```
+2. You can attach this analyzer per specific project(s) (e.g., [NewtonsoftJsonUsageAnalyzer.Sample.csproj](https://github.com/Hixon10/NewtonsoftJsonUsageAnalyzer/blob/main/NewtonsoftJsonUsageAnalyzer/NewtonsoftJsonUsageAnalyzer.Sample/NewtonsoftJsonUsageAnalyzer.Sample.csproj)):
 ```
     <ItemGroup>
         <ProjectReference Include="..\NewtonsoftJsonUsageAnalyzer\NewtonsoftJsonUsageAnalyzer.csproj"
                           OutputItemType="Analyzer" ReferenceOutputAssembly="false"/>
     </ItemGroup>
 ```
-2. You can attach this analyzer [globally](https://www.meziantou.net/referencing-an-analyzer-from-a-project.htm) via `Directory.Build.props`:
+3. You can attach this analyzer [globally](https://www.meziantou.net/referencing-an-analyzer-from-a-project.htm) via `Directory.Build.props`:
 ```
 <Project>
   <ItemGroup>
@@ -31,7 +37,6 @@ In a nutshell, you have 3 ways, how to use it:
   </ItemGroup>
 </Project>
 ```
-3. You can use a nuget package with this analyzer (TODO: upload to nuget)
 
 ## Example of NS0001 
 

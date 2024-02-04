@@ -6,6 +6,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NewtonsoftJsonUsageAnalyzer
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NewtonsoftJsonUsageAnalyzer.Tests", "NewtonsoftJsonUsageAnalyzer\NewtonsoftJsonUsageAnalyzer.Tests\NewtonsoftJsonUsageAnalyzer.Tests.csproj", "{E20EF578-BFA0-4DD8-895A-07927A684A66}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NewtonsoftJsonUsageAnalyzer.Package", "NewtonsoftJsonUsageAnalyzer\NewtonsoftJsonUsageAnalyzer.Package\NewtonsoftJsonUsageAnalyzer.Package.csproj", "{35E1679F-B1CD-42A1-9CB7-CB9341E39D44}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,5 +26,9 @@ Global
 		{E20EF578-BFA0-4DD8-895A-07927A684A66}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E20EF578-BFA0-4DD8-895A-07927A684A66}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E20EF578-BFA0-4DD8-895A-07927A684A66}.Release|Any CPU.Build.0 = Release|Any CPU
+		{35E1679F-B1CD-42A1-9CB7-CB9341E39D44}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{35E1679F-B1CD-42A1-9CB7-CB9341E39D44}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{35E1679F-B1CD-42A1-9CB7-CB9341E39D44}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{35E1679F-B1CD-42A1-9CB7-CB9341E39D44}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

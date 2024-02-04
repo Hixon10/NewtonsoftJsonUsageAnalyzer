@@ -1,0 +1,16 @@
+<Project>
+  <PropertyGroup>
+    <!-- Projects have to opt in to be packed -->
+    <IsPackable>false</IsPackable>
+    <Version>0.2.0</Version>
+    <PackageVersion>$(Version)</PackageVersion>
+    <Authors>Denis</Authors>
+    <PackageTags>C# Roslyn detector of Newtonsoft.Json usage</PackageTags>
+    <PackageProjectUrl>https://github.com/Hixon10/NewtonsoftJsonUsageAnalyzer</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/Hixon10/NewtonsoftJsonUsageAnalyzer</RepositoryUrl>
+    <PackageOutputPath>$(MSBuildThisFileDirectory)bin\$(Configuration)\</PackageOutputPath>
+    <!-- General settings -->
+    <Nullable>enable</Nullable>
+    <LangVersion>latest</LangVersion>
+  </PropertyGroup>
+</Project>
