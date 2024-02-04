@@ -21,3 +21,9 @@ jobs:
       run: dotnet build -bl:bin/build.binlog
     - name: test
       run: dotnet test --no-build --verbosity normal
+    - name: artifacts
+      if: always()
+      uses: actions/upload-artifact@v4
+      with:
+        name: artifacts
+        path: bin      
