@@ -11,7 +11,7 @@ namespace NewtonsoftJsonUsageAnalyzer;
 /// An analyzer that reports Newtonsoft library using being used in a class.
 /// </summary>
 [DiagnosticAnalyzer(LanguageNames.CSharp)]
-public class SampleSyntaxAnalyzer : DiagnosticAnalyzer
+public class NewtonsoftJsonUsageAnalyzer : DiagnosticAnalyzer
 {
     // Preferred format of DiagnosticId is Your Prefix + Number, e.g. CA1234.
     public const string DiagnosticId = "AB0001";

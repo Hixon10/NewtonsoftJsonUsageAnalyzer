@@ -6,11 +6,11 @@ using Microsoft.CodeAnalysis.Testing.Verifiers;
 using Xunit;
 using Verifier =
     Microsoft.CodeAnalysis.CSharp.Testing.XUnit.AnalyzerVerifier<
-        NewtonsoftJsonUsageAnalyzer.SampleSyntaxAnalyzer>;
+        NewtonsoftJsonUsageAnalyzer.NewtonsoftJsonUsageAnalyzer>;
 
 namespace NewtonsoftJsonUsageAnalyzer.Tests;
 
-public class SampleSyntaxAnalyzerTests
+public class NewtonsoftJsonUsageAnalyzerTests
 {
     [Fact]
     public async Task TestWithNewtonsoftUsing()
@@ -78,7 +78,7 @@ public class MyCompanyClass
                             }
                             """;
 
-        var test = new CSharpAnalyzerTest<SampleSyntaxAnalyzer, XUnitVerifier>
+        var test = new CSharpAnalyzerTest<NewtonsoftJsonUsageAnalyzer, XUnitVerifier>
         {
             TestCode = text,
             CompilerDiagnostics = CompilerDiagnostics.None
@@ -94,7 +94,7 @@ public class MyCompanyClass
             .WithMessage($"Type name '{packageName}' contains the company name")
             .WithArguments(packageName);
         
-        var test = new CSharpAnalyzerTest<SampleSyntaxAnalyzer, XUnitVerifier>
+        var test = new CSharpAnalyzerTest<NewtonsoftJsonUsageAnalyzer, XUnitVerifier>
         {
             TestCode = textCode,
             CompilerDiagnostics = CompilerDiagnostics.None
