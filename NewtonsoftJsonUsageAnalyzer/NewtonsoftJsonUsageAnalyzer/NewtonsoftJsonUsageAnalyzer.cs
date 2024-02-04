@@ -13,14 +13,11 @@ namespace NewtonsoftJsonUsageAnalyzer;
 [DiagnosticAnalyzer(LanguageNames.CSharp)]
 public class NewtonsoftJsonUsageAnalyzer : DiagnosticAnalyzer
 {
-    // Preferred format of DiagnosticId is Your Prefix + Number, e.g. CA1234.
     public const string DiagnosticId = "NS0001";
 
-    // Feel free to use raw strings if you don't need localization.
     private static readonly LocalizableString Title = new LocalizableResourceString(nameof(Resources.NS0001Title),
         Resources.ResourceManager, typeof(Resources));
 
-    // The message that will be displayed to the user.
     private static readonly LocalizableString MessageFormat =
         new LocalizableResourceString(nameof(Resources.NS0001MessageFormat), Resources.ResourceManager,
             typeof(Resources));
@@ -35,16 +32,15 @@ public class NewtonsoftJsonUsageAnalyzer : DiagnosticAnalyzer
     private static readonly DiagnosticDescriptor Rule = new(DiagnosticId, Title, MessageFormat, Category,
         DiagnosticSeverity.Error, isEnabledByDefault: true, description: Description);
 
-    // Keep in mind: you have to list your rules here.
     public override ImmutableArray<DiagnosticDescriptor> SupportedDiagnostics { get; } =
         ImmutableArray.Create(Rule);
 
     public override void Initialize(AnalysisContext context)
     {
-        // You must call this method to avoid analyzing generated code.
+        // Disable analyzing generated code.
         context.ConfigureGeneratedCodeAnalysis(GeneratedCodeAnalysisFlags.None);
 
-        // You must call this method to enable the Concurrent Execution.
+        // Enabling the Concurrent Execution.
         context.EnableConcurrentExecution();
 
         context.RegisterSyntaxNodeAction(AnalyzeUsing, SyntaxKind.UsingDirective);
