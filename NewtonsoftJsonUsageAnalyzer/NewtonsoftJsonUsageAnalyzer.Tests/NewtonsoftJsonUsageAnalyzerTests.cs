@@ -91,7 +91,7 @@ public class MyCompanyClass
     {
         var expected1 = Verifier.Diagnostic()
             .WithLocation(2, 1)
-            .WithMessage($"Type name '{packageName}' contains the company name")
+            .WithMessage($"Detected Newtonsoft usage: '{packageName}'")
             .WithArguments(packageName);
         
         var test = new CSharpAnalyzerTest<NewtonsoftJsonUsageAnalyzer, XUnitVerifier>

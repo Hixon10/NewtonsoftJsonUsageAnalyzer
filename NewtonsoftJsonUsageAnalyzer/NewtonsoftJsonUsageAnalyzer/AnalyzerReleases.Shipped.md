@@ -7,4 +7,4 @@
 
 Rule ID | Category | Severity | Notes
 --------|----------|----------|-------
-AB0001 | Design | Error | C# events can cause memory leaks in an NSObject subclass. Remove the event or add the [UnconditionalSuppressMessage("Memory", "MA0001")] attribute with a justification as to why the event will not leak.
+NS0001 | Design | Error | Newtonsoft.Json library usage is not allowed.

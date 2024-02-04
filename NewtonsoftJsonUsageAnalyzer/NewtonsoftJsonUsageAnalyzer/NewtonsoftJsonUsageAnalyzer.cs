@@ -14,19 +14,19 @@ namespace NewtonsoftJsonUsageAnalyzer;
 public class NewtonsoftJsonUsageAnalyzer : DiagnosticAnalyzer
 {
     // Preferred format of DiagnosticId is Your Prefix + Number, e.g. CA1234.
-    public const string DiagnosticId = "AB0001";
+    public const string DiagnosticId = "NS0001";
 
     // Feel free to use raw strings if you don't need localization.
-    private static readonly LocalizableString Title = new LocalizableResourceString(nameof(Resources.AB0001Title),
+    private static readonly LocalizableString Title = new LocalizableResourceString(nameof(Resources.NS0001Title),
         Resources.ResourceManager, typeof(Resources));
 
     // The message that will be displayed to the user.
     private static readonly LocalizableString MessageFormat =
-        new LocalizableResourceString(nameof(Resources.AB0001MessageFormat), Resources.ResourceManager,
+        new LocalizableResourceString(nameof(Resources.NS0001MessageFormat), Resources.ResourceManager,
             typeof(Resources));
 
     private static readonly LocalizableString Description =
-        new LocalizableResourceString(nameof(Resources.AB0001Description), Resources.ResourceManager,
+        new LocalizableResourceString(nameof(Resources.NS0001Description), Resources.ResourceManager,
             typeof(Resources));
 
     // The category of the diagnostic (Design, Naming etc.).

@@ -45,21 +45,21 @@ namespace NewtonsoftJsonUsageAnalyzer {
             }
         }
         
-        internal static string AB0001Description {
+        internal static string NS0001Description {
             get {
-                return ResourceManager.GetString("AB0001Description", resourceCulture);
+                return ResourceManager.GetString("NS0001Description", resourceCulture);
             }
         }
         
-        internal static string AB0001MessageFormat {
+        internal static string NS0001MessageFormat {
             get {
-                return ResourceManager.GetString("AB0001MessageFormat", resourceCulture);
+                return ResourceManager.GetString("NS0001MessageFormat", resourceCulture);
             }
         }
         
-        internal static string AB0001Title {
+        internal static string NS0001Title {
             get {
-                return ResourceManager.GetString("AB0001Title", resourceCulture);
+                return ResourceManager.GetString("NS0001Title", resourceCulture);
             }
         }
     }
