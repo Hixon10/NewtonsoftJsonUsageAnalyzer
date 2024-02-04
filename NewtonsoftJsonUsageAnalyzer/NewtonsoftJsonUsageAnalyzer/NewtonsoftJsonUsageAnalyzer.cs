@@ -13,18 +13,13 @@ namespace NewtonsoftJsonUsageAnalyzer;
 [DiagnosticAnalyzer(LanguageNames.CSharp)]
 public class NewtonsoftJsonUsageAnalyzer : DiagnosticAnalyzer
 {
-    public const string DiagnosticId = "NS0001";
+    private const string DiagnosticId = "NS0001";
 
-    private static readonly LocalizableString Title = new LocalizableResourceString(nameof(Resources.NS0001Title),
-        Resources.ResourceManager, typeof(Resources));
+    private const string Title = "Code contains Newtonsoft.Json library usage";
 
-    private static readonly LocalizableString MessageFormat =
-        new LocalizableResourceString(nameof(Resources.NS0001MessageFormat), Resources.ResourceManager,
-            typeof(Resources));
+    private const string MessageFormat = "Detected Newtonsoft usage: '{0}'";
 
-    private static readonly LocalizableString Description =
-        new LocalizableResourceString(nameof(Resources.NS0001Description), Resources.ResourceManager,
-            typeof(Resources));
+    private const string Description = "Code shouldn't contain any Newtonsoft usage.";
 
     // The category of the diagnostic (Design, Naming etc.).
     private const string Category = "Design";
