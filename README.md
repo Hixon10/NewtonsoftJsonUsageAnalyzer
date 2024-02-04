@@ -10,7 +10,7 @@ In these cases, it is needed to have some way to detect usage of `Newtonsoft.Jso
 
 ## How to use
 
-In a nutshell, you have 3 ways, how to do it:
+In a nutshell, you have 3 ways, how to use it:
 
 1. You can attach this analyzer per specific project(s) (e.g., [NewtonsoftJsonUsageAnalyzer.Sample.csproj](https://github.com/Hixon10/NewtonsoftJsonUsageAnalyzer/blob/main/NewtonsoftJsonUsageAnalyzer/NewtonsoftJsonUsageAnalyzer.Sample/NewtonsoftJsonUsageAnalyzer.Sample.csproj)):
 ```
