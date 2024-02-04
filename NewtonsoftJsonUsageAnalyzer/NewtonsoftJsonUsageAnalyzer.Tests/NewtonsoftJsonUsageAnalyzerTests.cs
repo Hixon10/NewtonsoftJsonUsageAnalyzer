@@ -23,7 +23,7 @@ public class MyCompanyClass
 {
 }
 ";
-        await ExecuteTest(text, "Newtonsoft.Json");
+        await ExecuteTest(text, "Newt1onsoft.Json");
     }
     
     [Fact]
